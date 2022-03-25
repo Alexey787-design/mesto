@@ -1,0 +1,10 @@
+.profile__edit-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* margin-right: 30px; */
+  cursor: pointer;
+  outline: none;
+  background: none;
+  white-space: nowrap;
+}

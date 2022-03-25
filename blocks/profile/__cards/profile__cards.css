@@ -1,0 +1,15 @@
+.profile__cards {
+  margin: 0;
+  display: flex;
+  padding: 0px;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+@media screen and (max-width: 709px) {
+  .profile__cards {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,20 @@
+.profile__subheader {
+  margin: 0;
+  /* margin-top: 16px; */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* align-self: flex-start; */
+}
+
+
+/* @media screen and (max-width: 709px) {
+  .profile__subheader {
+    text-align: center;
+  }
+} */

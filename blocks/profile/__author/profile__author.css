@@ -1,0 +1,20 @@
+.profile__author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 18px;
+  row-gap: 16px;
+  /* justify-content: space-between; */
+  width: 334px;
+  /* min-width: 73px; */
+  /*  flex-direction: column; */
+}
+
+@media screen and (max-width: 709px) {
+  .profile__author {
+    /* flex-direction: column; */
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+}
