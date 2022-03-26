@@ -1,8 +1,14 @@
 .header {
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 920px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 918px;
+  padding-left: 19px;
+  padding-right: 19px;
   padding-top: 45px;
+}
+
+@media screen and (max-width: 482px) {
+  .header {
+    padding-top: 28px;
+  }
 }

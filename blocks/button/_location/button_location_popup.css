@@ -1,0 +1,11 @@
+.button_location_popup {
+  max-width: 358px;
+  /* width: 100%; */
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 482px) {
+  .button_location_popup {
+    margin-top: 45px;
+  }
+}

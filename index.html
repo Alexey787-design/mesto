@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
+  <script src="./scripts/index.js"></script>
   <title>MESTO</title>
 </head>
 
@@ -16,7 +17,6 @@
     </header>
     <main class="content">
       <section class="profile">
-
         <ul class="profile__cards">
           <li><img src="./images/kusto.jpg" alt="" class="profile__avatar"></li>
           <li class="profile__author">
@@ -24,36 +24,47 @@
             <button class="profile__edit-btn"><img src="./images/Edit Button.png" alt=""></button>
             <p class="profile__subheader">Исследователь океана</p>
           </li>
-
         </ul>
         <button class="profile__add-btn"><img src="./images/Add Button.png" alt=""></button>
       </section>
       <section class="elements">
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
+          <img src="./images/karachaevsk.jpg" alt="Фото старой кирпичной церкви" class="element__img">
           <div class="element__text">
-            <h2 class="element__header">Карачаево-Черкессия</h2>
+            <h2 class="element__header">Карачаевск</h2>
             <button class="element__button"><img src="./images/like.png" alt=""></button>
           </div>
         </article>
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
-          <h2 class="element__header">Карачаевск</h2>
+          <img src="./images/elbrus.jpg" alt="Гора эльбрус на рассвете" class="element__img">
+          <div class="element__text">
+            <h2 class="element__header">Гора эльбрус</h2>
+            <button class="element__button"><img src="./images/like.png" alt=""></button>
+          </div>
         </article>
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
-          <h2 class="element__header">Карачаевск</h2>
+          <img src="./images/dombay.jpg" alt="Фото заснеженной горы" class="element__img">
+          <div class="element__text">
+            <h2 class="element__header">Домбай</h2>
+            <button class="element__button"><img src="./images/like.png" alt=""></button>
+          </div>
         </article>
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
-          <h2 class="element__header">Карачаевск</h2>
+          <img src="./images/elbrus.jpg" alt="Фото горы на рассвете" class="element__img">
+          <div class="element__text">
+            <h2 class="element__header">Гора эльбрус</h2>
+            <button class="element__button"><img src="./images/like.png" alt=""></button>
+          </div>
         </article>
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
-          <h2 class="element__header">Карачаевск</h2>
+          <img src="./images/dombay.jpg" alt="" class="element__img">
+          <div class="element__text">
+            <h2 class="element__header">Домбай</h2>
+            <button class="element__button"><img src="./images/like.png" alt="Фото заснеженной горы"></button>
+          </div>
         </article>
         <article class="element">
-          <img src="./images/karachaevsk.jpg" alt="" class="element__img">
+          <img src="./images/karachaevsk.jpg" alt="Фото старой кирпичной церкви" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Карачаево-Черкессия</h2>
             <button class="element__button"><img src="./images/like.png" alt=""></button>
@@ -64,7 +75,20 @@
     <footer class="footer">
       <p class="footer__logo">&copy; 2022 Mesto Russia</p>
     </footer>
-  </div>
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__body">
+          <h2 class="popup__header">Редактировать профиль</h2>
+          <h3 class="popup__name">Жак-Ив Кусто</h3>
+          <div class="popup__line"></div>
+          <p class="popup__subheader">Исследователь океана</p>
+          <div class="popup__line"></div>
+          <button class="button button_location_popup"><img class="button__img" src="./images/Submit Button.png" alt=""></button>
+          <button class="button button_location_popup_close"><img src="./images/Close Icon.png" alt=""></button>
+        </div>
+
+      </div>
+    </div>
 
 </body>
 

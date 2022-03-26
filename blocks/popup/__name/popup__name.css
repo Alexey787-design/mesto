@@ -1,15 +1,15 @@
-.footer__logo {
+.popup__name {
   margin: 0;
+  margin-top: 54px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #545454;
+  font-size: 14px;
+  line-height: 1.21;
 }
 
 @media screen and (max-width: 482px) {
-  .footer__logo {
-    font-size: 14px;
+  .popup__name {
+    margin-top: 75px;
   }
 }
