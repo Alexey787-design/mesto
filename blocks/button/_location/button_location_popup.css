@@ -4,6 +4,10 @@
   margin-top: 48px;
 }
 
+.button_location_popup:hover {
+  opacity: 80%;
+}
+
 @media screen and (max-width: 482px) {
   .button_location_popup {
     margin-top: 45px;

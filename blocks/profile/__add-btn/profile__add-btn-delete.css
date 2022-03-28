@@ -1,0 +1,6 @@
+@media screen and (max-width: 709px) {
+  .profile__add-btn {
+    margin-top: 36px;
+    align-self: stretch;
+  }
+}

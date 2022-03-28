@@ -1,0 +1,10 @@
+.button_location_profile_add:hover {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 709px) {
+  .button_location_profile_add {
+    margin-top: 36px;
+    align-self: stretch;
+  }
+}

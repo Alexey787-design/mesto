@@ -1,14 +1,18 @@
-.button_location_popup_close {
-  /* width: 32px; */
-  /* height: 32px; */
-  /* z-index: 3; */
-  position: absolute;
-  top: -40px;
-  right: -40px;
-}
-
-@media screen and (max-width: 550px) {
   .button_location_popup_close {
-    right: 0px;
+    /* width: 32px; */
+    /* height: 32px; */
+    /* z-index: 3; */
+    position: absolute;
+    top: -40px;
+    right: -40px;
   }
-}
+  
+  .button_location_popup_close {
+    opacity: 60%;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .button_location_popup_close {
+      right: 0px;
+    }
+  }
