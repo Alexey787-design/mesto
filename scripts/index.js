@@ -1,5 +1,5 @@
-let editButton = document.querySelector('.button_location_profile_edit');
-let closeButton = document.querySelector('.button_location_popup_close');
+let editButton = document.querySelector('.profile__btn-edit');
+let closeButton = document.querySelector('.popup__btn-close');
 
 let popupConteiner = document.querySelector('.popup');
 

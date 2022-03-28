@@ -12,5 +12,6 @@
     justify-content: center;
     column-gap: 10px;
     row-gap: 14px;
+    width: 320px;
   }
 }

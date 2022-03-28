@@ -1,8 +1,12 @@
-.button {
+.profile__btn-edit {
   margin: 0;
   padding: 0;
   border: none;
   cursor: pointer;
   outline: none;
   background: none;
+}
+
+.profile__btn-edit:hover {
+  opacity: 60%;
 }

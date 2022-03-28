@@ -1,0 +1,19 @@
+.profile__btn-add {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
+.profile__btn-add:hover {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 709px) {
+  .profile__btn-add {
+    margin-top: 36px;
+    align-self: stretch;
+  }
+}
