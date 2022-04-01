@@ -1,13 +1,20 @@
 .popup__btn-submit {
-  margin: 0;
-  padding: 0;
-  border: none;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* border: none; */
   cursor: pointer;
-  outline: none;
-  background: none;
+  /* outline: none; */
+  background: #000000;
   max-width: 358px;
   min-height: 46px;
   margin-top: 48px;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
 }
 
 .popup__btn-submit:hover {

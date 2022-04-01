@@ -1,10 +1,15 @@
 .profile__btn-edit {
   margin: 0;
   padding: 0;
-  border: none;
   cursor: pointer;
-  outline: none;
-  background: none;
+  background: url(../../../images/edit-btn.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #FFFFFF;
+  /* align-self: center; */
 }
 
 .profile__btn-edit:hover {

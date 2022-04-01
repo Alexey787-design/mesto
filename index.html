@@ -11,63 +11,62 @@
 
 <body class="bg-color">
   <div class="page">
-    <header class="header">
+    <header class="header header__stripe">
       <img src="./images/mesto-logo.svg" alt="Логотип Сайта class=" class="header__logo">
-      <div class="header__stripe"></div>
     </header>
     <main class="content">
       <section class="profile">
-        <ul class="profile__cards">
-          <li><img src="./images/kusto.jpg" alt="" class="profile__avatar"></li>
-          <li class="profile__author">
-            <h1 class="profile__header">Жак-Ив Кустоhvkjh</h1>
-            <button class="profile__btn-edit"><img src="./images/edit-btn.png" alt="Кнопка Изменить"></button>
+        <div class="profile__cards">
+          <div><img src="./images/kusto.jpg" alt="" class="profile__avatar"></div>
+          <div class="profile__author">
+            <h1 class="profile__header">Жак-Ив Кусто</h1>
+            <button class="profile__btn-edit" type="button"></button>
             <p class="profile__subheader">Исследователь океана</p>
-          </li>
-        </ul>
-        <button class="profile__btn-add"><img src="./images/add-btn.png" alt="Кнопка Добавить"></button>
+          </div>
+        </div>
+        <button class="profile__btn-add" type="button"></button>
       </section>
-      <section class="elements">
+      <section class="elements" aria-label="Карточка с изображениями">
         <article class="element">
           <img src="./images/karachaevsk.jpg" alt="Фото старой кирпичной церкви" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Карачаевск</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/elbrus.jpg" alt="Гора эльбрус на рассвете" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Гора эльбрус</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/dombay.jpg" alt="Фото заснеженной горы" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Домбай</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/elbrus.jpg" alt="Фото горы на рассвете" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Гора эльбрус</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/dombay.jpg" alt="Фото горы Донбай" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Домбай</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/karachaevsk.jpg" alt="Фото старой кирпичной церкви" class="element__img">
           <div class="element__text">
             <h2 class="element__header">Карачаево-Черкессия</h2>
-            <button class="element__like"><img src="./images/like.png" alt="Кнопка Лайк"></button>
+            <button class="element__like" type="button"></button>
           </div>
         </article>
       </section>
@@ -77,14 +76,12 @@
     </footer>
     <div class="popup">
       <div class="popup__container">
-        <form class="popup__body">
+        <form class="popup__body" name="formauthor">
           <h2 class="popup__header">Редактировать профиль</h2>
-          <input class="popup__name" type="text" value="Жак-Ив Кусто">
-          <div class="popup__line"></div>
-          <input class="popup__subheader" type="text" value="Исследователь океана">
-          <div class="popup__line"></div>
-          <button type="submit" class="popup__btn-submit"><img class="popup__btnimg" src="./images/submit-btn.png" alt="Кнопка сохранить"></button>
-          <button type="button" class="popup__btn-close"><img src="./images/close-icon.png" alt="Кнопка закрыть"></button>
+          <input class="popup__name" name="formname" type="text" placeholder="Имя">
+          <input class="popup__subheader" name="formhobby" type="text" placeholder="О себе">
+          <button type="submit" class="popup__btn-submit">Сохранить</button>
+          <button type="button" class="popup__btn-close"></button>
         </form>
       </div>
     </div>

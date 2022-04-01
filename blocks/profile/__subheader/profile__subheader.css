@@ -13,5 +13,6 @@
 @media screen and (max-width: 482px) {
   .profile__subheader {
     font-size: 14px;
+    max-width: 280px;
   }
 }
