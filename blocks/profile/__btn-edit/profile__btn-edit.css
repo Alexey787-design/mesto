@@ -9,9 +9,10 @@
   width: 24px;
   height: 24px;
   border: 1px solid #FFFFFF;
-  /* align-self: center; */
 }
 
 .profile__btn-edit:hover {
   opacity: 60%;
+  width: 18px;
+  height: 18px;
 }
