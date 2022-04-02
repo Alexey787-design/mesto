@@ -4,7 +4,7 @@
   align-items: baseline;
   column-gap: 18px;
   row-gap: 16px;
-  width: 334px;
+  width: 336px;
 }
 
 @media screen and (max-width: 709px) {

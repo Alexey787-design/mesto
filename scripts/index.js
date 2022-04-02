@@ -5,16 +5,18 @@ const popupConteiner = document.querySelector('.popup');
 
 const formElement = document.querySelector('.popup__body');
 
-const nameInput = document.querySelector('.popup__name');
-const jobInput = document.querySelector('.popup__subheader');
+const nameInput = document.querySelector('.popup__text_place_name');
+const jobInput = document.querySelector('.popup__text_place_aboutyou');
 
 const nameDefault = document.querySelector('.profile__header');
 const jobDefault = document.querySelector('.profile__subheader');
 
 
 function togglePopup() {
-  nameInput.value = nameDefault.textContent;
-  jobInput.value = jobDefault.textContent;
+  if (!popupConteiner.classList.contains('popup_opened')) {
+    nameInput.value = nameDefault.textContent;
+    jobInput.value = jobDefault.textContent;
+  }
   popupConteiner.classList.toggle('popup_opened');
 }
 
