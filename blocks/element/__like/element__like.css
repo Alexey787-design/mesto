@@ -10,3 +10,7 @@
   width: 22px;
   box-sizing: border-box;
 }
+
+.element__like:hover {
+  opacity: 0.6;
+}
