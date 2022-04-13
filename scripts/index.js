@@ -61,22 +61,17 @@ function togglePopup() {
 
 function togglePopupFoto() {
   popupConteinerFoto.classList.toggle('popup_opened');
-
 }
 
 function closePopupPic() {
   popupConteinerPic.classList.remove('popup_opened');
-
 }
 
 
 editButton.addEventListener('click', togglePopup);
 addButton.addEventListener('click', togglePopupFoto);
-
 closeButton.addEventListener('click', togglePopup);
-
 closeButtonFoto.addEventListener('click', togglePopupFoto);
-
 closeButtonPic.addEventListener('click', closePopupPic);
 
 
@@ -102,7 +97,6 @@ function formSubmitHandlerFoto(evt) {
 formElement.addEventListener('submit', formSubmitHandler);
 formElementFoto.addEventListener('submit', formSubmitHandlerFoto);
 
-
 function render() {
   const html = initialCards.map(getElement);
   cardContainer.append(...html);
@@ -126,8 +120,6 @@ function getElement(item) {
     addPopupPic(formElementPic);
   });
 
-
-
   return getElementTemplate;
 }
 
@@ -145,13 +137,7 @@ function addPopupPic() {
 }
 
 function handlePopupimg(evt) {
-  evt.preventDefault();
   addPopupPic();
-
-
 }
-
-
-
 
 render();
