@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
+  <script defer src="./scripts/cards.js"></script>
   <script defer src="./scripts/index.js"></script>
   <title>MESTO</title>
 </head>
@@ -36,8 +37,8 @@
       <div class="popup__container">
         <form class="popup__body" name="formauthor">
           <h2 class="popup__header">Редактировать профиль</h2>
-          <input class="popup__text popup__text_place_name" name="formname" type="text" placeholder="Имя">
-          <input class="popup__text popup__text_place_aboutyou" name="formhobby" type="text" placeholder="О себе">
+          <input class="popup__text popup__text_place_top" name="formname" type="text" placeholder="Имя" required>
+          <input class="popup__text popup__text_place_bottom" name="formhobby" type="text" placeholder="О себе" required>
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>
@@ -47,8 +48,8 @@
       <div class="popup__container">
         <form class="popup__body" name="formfoto">
           <h2 class="popup__header">Новое место</h2>
-          <input class="popup__text popup__text_place_name" name="formname-place" type="text" placeholder="Название">
-          <input class="popup__text popup__text_place_aboutyou" name="form-foto" type="text" placeholder="Ссылка на картинку">
+          <input class="popup__text popup__text_place_top" name="formname-place" type="url" placeholder="Название" required>
+          <input class="popup__text popup__text_place_bottom" name="form-foto" type="text" placeholder="Ссылка на картинку" required>
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>
