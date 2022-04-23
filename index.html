@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
+  <script defer src="./scripts/cards.js"></script>
   <script defer src="./scripts/index.js"></script>
   <title>MESTO</title>
 </head>
@@ -34,10 +35,12 @@
     </footer>
     <div class="popup popup_place_profile">
       <div class="popup__container">
-        <form class="popup__body" name="formauthor">
+        <form class="popup__body" name="formauthor" novalidate>
           <h2 class="popup__header">Редактировать профиль</h2>
-          <input class="popup__text popup__text_place_name" name="formname" type="text" placeholder="Имя">
-          <input class="popup__text popup__text_place_aboutyou" name="formhobby" type="text" placeholder="О себе">
+          <input id="name-input" minlength="2" maxlength="40" class="popup__text popup__text_place_top" name="formname" type="text" placeholder="Имя" required>
+          <span id="name-input-error" class="error"></span>
+          <input id="aboutyou-input" minlength="2" maxlength="200" class="popup__text popup__text_place_bottom" name="formhobby" type="text" placeholder="О себе" required>
+          <span class="error"></span>
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>
@@ -45,10 +48,12 @@
     </div>
     <div class="popup popup_place_foto">
       <div class="popup__container">
-        <form class="popup__body" name="formfoto">
+        <form class="popup__body" name="formfoto" novalidate>
           <h2 class="popup__header">Новое место</h2>
-          <input class="popup__text popup__text_place_name" name="formname-place" type="text" placeholder="Название">
-          <input class="popup__text popup__text_place_aboutyou" name="form-foto" type="text" placeholder="Ссылка на картинку">
+          <input id="nameplace-input" minlength="2" maxlength="30" class="popup__text popup__text_place_top" name="formname-place" type="text" placeholder="Название" required>
+          <span class="error"></span>
+          <input id="urlplace-input" class="popup__text popup__text_place_bottom" name="form-foto" type="url" placeholder="Ссылка на картинку" required>
+          <span class="error"></span>
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>
@@ -56,15 +61,15 @@
     </div>
     <div class="popup popup_place_picture">
       <form class="popup__body-picture" name="formpicture">
-        <img class="popup__imgpic" src="" alt="" />
+        <img class="popup__imgpic" src="/" alt="/" />
         <button type="button" class="popup__btn-close"></button>
-        <figcaption class="popup__caption"></figcaption>
+        <div class="popup__caption"></div>
       </form>
     </div>
   </div>
   <template class="template" aria-label="Карточка с изображениями">
       <article class="element">
-        <img src="" alt="" class="element__img">
+        <img src="/" alt="/" class="element__img">
         <button class="element__garbage" type="button"></button>
         <div class="element__text">
           <h2 class="element__header"></h2>
