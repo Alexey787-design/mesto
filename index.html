@@ -35,12 +35,16 @@
     </footer>
     <div class="popup popup_place_profile">
       <div class="popup__container">
-        <form class="popup__body" name="formauthor" novalidate>
+        <form class="popup__form" name="formauthor" novalidate>
           <h2 class="popup__header">Редактировать профиль</h2>
-          <input id="name-input" minlength="2" maxlength="40" class="popup__text popup__text_place_top" name="formname" type="text" placeholder="Имя" required>
-          <span id="name-input-error" class="error"></span>
-          <input id="aboutyou-input" minlength="2" maxlength="200" class="popup__text popup__text_place_bottom" name="formhobby" type="text" placeholder="О себе" required>
-          <span class="error"></span>
+          <div class="popup__position-container">
+            <input id="name-input" minlength="2" maxlength="40" class="popup__input popup__input_place_top" name="formname" type="text" placeholder="Имя" required>
+            <span id="name-input-error" class="popup__error"></span>
+          </div>
+          <!--  <div class="popup__position-container"> -->
+          <input id="aboutyou-input" minlength="2" maxlength="200" class="popup__input popup__input_place_bottom" name="formhobby" type="text" placeholder="О себе" required>
+          <span id="aboutyou-input-error" class="popup__error"></span>
+          <!--  </div> -->
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>
@@ -48,12 +52,16 @@
     </div>
     <div class="popup popup_place_foto">
       <div class="popup__container">
-        <form class="popup__body" name="formfoto" novalidate>
+        <form class="popup__form" name="formfoto" novalidate>
           <h2 class="popup__header">Новое место</h2>
-          <input id="nameplace-input" minlength="2" maxlength="30" class="popup__text popup__text_place_top" name="formname-place" type="text" placeholder="Название" required>
-          <span class="error"></span>
-          <input id="urlplace-input" class="popup__text popup__text_place_bottom" name="form-foto" type="url" placeholder="Ссылка на картинку" required>
-          <span class="error"></span>
+          <!-- <div class="popup__position-container"> -->
+          <input id="nameplace-input" minlength="2" maxlength="30" class="popup__input popup__input_place_top" name="formname-place" type="text" placeholder="Название" required>
+          <span id="nameplace-input-error" class="popup__error"></span>
+          <!-- </div> -->
+          <!-- <div class="popup__position-container"> -->
+          <input id="urlplace-input" class="popup__input popup__input_place_bottom" name="form-foto" type="url" placeholder="Ссылка на картинку" required>
+          <span id="urlplace-input-error" class="popup__error"></span>
+          <!-- </div> -->
           <button type="submit" class="popup__btn-submit">Сохранить</button>
           <button type="button" class="popup__btn-close"></button>
         </form>

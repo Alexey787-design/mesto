@@ -1,16 +1,21 @@
 .popup__btn-submit {
   cursor: pointer;
+  border: none;
   background: #000000;
+  /* background: white; */
+  /* border-color: #E5E5E5; */
   max-width: 358px;
   min-height: 46px;
   margin-top: 48px;
-  color: #FFFFFF;
+  color: #E5E5E5;
+  /* color: #000000; */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
+  outline: none;
 }
 
 .popup__btn-submit:hover {

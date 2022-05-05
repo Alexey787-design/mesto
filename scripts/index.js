@@ -8,17 +8,26 @@ const buttonAdd = document.querySelector('.profile__btn-add');
 const buttonProfileClose = profilePopup.querySelector('.popup__btn-close');
 const buttonImageClose = imagePopup.querySelector('.popup__btn-close');
 const buttonPlaceClose = newPlacePopup.querySelector('.popup__btn-close');
-const formElementProfile = profilePopup.querySelector('.popup__body');
-const formElementImage = imagePopup.querySelector('.popup__body');
-const formElementPlace = newPlacePopup.querySelector('.popup__body-picture');
-const nameInput = profilePopup.querySelector('.popup__text_place_top');
-const jobInput = profilePopup.querySelector('.popup__text_place_bottom');
+const formSelectorPlace = newPlacePopup.querySelector('.popup__body-picture');
+const nameInput = profilePopup.querySelector('.popup__input_place_top');
+const jobInput = profilePopup.querySelector('.popup__input_place_bottom');
 const nameDefault = document.querySelector('.profile__header');
 const jobDefault = document.querySelector('.profile__subheader');
-const namePlaceInput = imagePopup.querySelector('.popup__text_place_top');
-const srcCardInput = imagePopup.querySelector('.popup__text_place_bottom');
+const namePlaceInput = imagePopup.querySelector('.popup__input_place_top');
+const srcCardInput = imagePopup.querySelector('.popup__input_place_bottom');
 const cardContainer = document.querySelector('.elements');
 const template = document.querySelector('.template');
+const formSelectorProfile = profilePopup.querySelector('.popup__form');
+const formSelectorImage = imagePopup.querySelector('.popup__form');
+
+/* enableValidation({
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__btn-submit',
+  inactiveButtonClass: 'popup__btn-disable',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__error_visible'
+}); */
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
@@ -108,6 +117,12 @@ buttonPlaceClose.addEventListener('click', function() {
   closePopup(newPlacePopup);
 });
 
-formElementProfile.addEventListener('submit', handleProfileSubmit);
-formElementImage.addEventListener('submit', handlePlaceCardAdd);
+document.addEventListener('keydown', (event) => {
+  if (event.code == 'Escape') {
+    closePopup(document.querySelector('.popup_opened'));
+  }
+});
+
+formSelectorProfile.addEventListener('submit', handleProfileSubmit);
+formSelectorImage.addEventListener('submit', handlePlaceCardAdd);
 buttonEdit.addEventListener('click', handleProfileEdit);
