@@ -40,8 +40,6 @@ function hasInvalidInput(inputList) {
   })
 }
 
-
-//добавить и при открытии попапа 
 function toggleButton(inputList, config) {
   if (hasInvalidInput(inputList)) {
     disableSubmitButton(config)
