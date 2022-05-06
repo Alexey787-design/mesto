@@ -7,16 +7,6 @@ const config = {
   errorClass: 'popup__error_visible',
 }
 
-const enableValidation = (config) => {
-  const formList = Array.from(document.querySelectorAll(config.formSelector));
-  formList.forEach((formElement) => {
-    formElement.addEventListener('submit', (evt) => {
-      evt.preventDefault();
-    });
-    setEventListeners(formElement, config);
-  });
-};
-
 const setEventListeners = (formElement, config) => {
   const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
   const buttonElement = formElement.querySelector(config.submitButtonSelector);
@@ -27,13 +17,6 @@ const setEventListeners = (formElement, config) => {
     });
   });
 };
-
-function resetErrors(config) {
-  const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
-  inputList.forEach((inputElement) => {
-    hideInputError(formElement, inputElement, config)
-  });
-}
 
 function disableSubmitButton(config) {
   const button = Array.from(document.querySelectorAll(config.submitButtonSelector));
@@ -52,11 +35,13 @@ function enableSubmitButton(config) {
 };
 
 function hasInvalidInput(inputList) {
-  return inputList.some(function(inputList) {
-    return !inputList.validity.valid
+  return inputList.some(function(input) {
+    return !input.validity.valid
   })
 }
 
+
+//добавить и при открытии попапа 
 function toggleButton(inputList, config) {
   if (hasInvalidInput(inputList)) {
     disableSubmitButton(config)
@@ -70,7 +55,6 @@ const showInputError = (formElement, inputElement, errorMessage, config) => {
   inputElement.classList.add(config.inputErrorClass);
   errorElement.textContent = errorMessage;
   errorElement.classList.add(config.errorClass);
-
 };
 
 const hideInputError = (formElement, inputElement, config) => {
@@ -78,17 +62,24 @@ const hideInputError = (formElement, inputElement, config) => {
   inputElement.classList.remove(config.inputErrorClass);
   errorElement.classList.remove(config.errorClass);
   errorElement.textContent = '';
-
 };
 
 const checkInputValidity = (formElement, inputElement, config) => {
   if (!inputElement.validity.valid) {
     showInputError(formElement, inputElement, inputElement.validationMessage, config);
-    disableSubmitButton(config);
   } else {
     hideInputError(formElement, inputElement, config);
-    enableSubmitButton(config);
   }
+};
+
+const enableValidation = (config) => {
+  const formList = Array.from(document.querySelectorAll(config.formSelector));
+  formList.forEach((formElement) => {
+    formElement.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+    });
+    setEventListeners(formElement, config);
+  });
 };
 
 enableValidation(config);

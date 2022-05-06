@@ -20,15 +20,6 @@ const template = document.querySelector('.template');
 const formSelectorProfile = profilePopup.querySelector('.popup__form');
 const formSelectorImage = imagePopup.querySelector('.popup__form');
 
-/* enableValidation({
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__btn-submit',
-  inactiveButtonClass: 'popup__btn-disable',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__error_visible'
-}); */
-
 function openPopup(popup) {
   popup.classList.add('popup_opened');
 }
@@ -42,6 +33,7 @@ function handleProfileEdit(evt) {
   openPopup(profilePopup);
   nameInput.value = nameDefault.textContent;
   jobInput.value = jobDefault.textContent;
+
 }
 
 function handleProfileSubmit(evt) {
@@ -61,6 +53,7 @@ function handlePopupNewplace(item) {
   popupPicView.src = item.link;
   popupPicView.alt = item.name;
   popupPicCaption.textContent = item.name;
+
 }
 
 function handlePlaceCardAdd(evt) {
